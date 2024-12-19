@@ -1,0 +1,10 @@
+{
+  "adminTitleSelector": "h2.login__title",
+  "adminLoginSelector": "input[type='email']",
+  "adminPassSelector": "input[type='password']",
+  "adminAuthButtonSelector": "input[value='Авторизоваться']",
+  "navigationByDays": "a.page-nav__day",
+  "poster": ".movie",
+  "cinemaHall": ".buying-scheme__wrapper",
+  "buttonOk": ".acceptin-button"
+}

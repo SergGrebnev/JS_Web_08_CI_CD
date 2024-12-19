@@ -1,0 +1,8 @@
+{
+  "url": "/admin/",
+  "adminValid": { "login": "qamid@qamid.ru", "pass": "qamid" },
+  "adminInvalid": [
+    { "login": "{backspace}", "pass": "qamid" },
+    { "login": "qamid@qamid.ru", "pass": "{backspace}" }
+  ]
+}
