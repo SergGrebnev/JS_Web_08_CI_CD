@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "open": "npx cypress open",
-    "cypress1": "cypress run --headed --browser chrome",
-    "cypress2": "cypress run --headless --browser chrome",
+    "chrome": "cypress run --browser chrome --record --key 78a6a840-ab98-47d2-9c93-ed3028eb4d96",
+    "electron": "cypress run --browser electron --record --key 78a6a840-ab98-47d2-9c93-ed3028eb4d96",
+    "firefox": "cypress run --browser firefox --record --key 78a6a840-ab98-47d2-9c93-ed3028eb4d96",
     "cloud1": "cypress run --spec 'cypress/e2e/cinema-book.cy.js' --record --key 78a6a840-ab98-47d2-9c93-ed3028eb4d96",
     "cloud2": "cypress run --spec 'cypress/e2e/cinema-visit.cy.js' --record --key 78a6a840-ab98-47d2-9c93-ed3028eb4d96",
-    "parallel": "npm run cloud1 -- --browser chrome --group Spec1 --ci-build-id 1 & npm run cloud2 -- --browser chrome --group Spec2 --ci-build-id 1"
+    "parallel": "npm run cloud1 -- --browser chrome --group Spec1 --ci-build-id 1 & npm run cloud2 -- --browser chrome --group Spec2 --ci-build-id 1",
+    "ch+el": "npm run chrome -- --spec 'cypress/e2e/cinema-book.cy.js' --group Chrome --ci-build-id 2 & npm run electron -- --spec 'cypress/e2e/cinema-visit.cy.js' --group Electron --ci-build-id 2"
   },
   "author": "SergGrebnev",
   "license": "ISC",
